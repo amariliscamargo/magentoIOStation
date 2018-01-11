@@ -1,0 +1,34 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1515693940;s:6:"expire";i:1515697540;s:4:"tags";s:47:"566_BLOCK_HTML,566_CAT_P_371,566_CAT_P,566_MAGE";}
+<div class="swatch-opt-371"></div>
+<script>
+    require([
+        'jquery',
+        'jquery/ui',
+        'Magento_Swatches/js/swatch-renderer',
+        'Magento_Swatches/js/catalog-add-to-cart',
+        'priceBox'
+    ], function ($) {
+        var jsonConfig = {"attributes":{"141":{"id":"141","code":"size","label":"Size","options":[{"id":"167","label":"XS","products":["356","357","358"]},{"id":"168","label":"S","products":["359","360","361"]},{"id":"169","label":"M","products":["362","363","364"]},{"id":"170","label":"L","products":["365","366","367"]},{"id":"171","label":"XL","products":["368","369","370"]}],"position":"0"},"93":{"id":"93","code":"color","label":"Color","options":[{"id":"49","label":"Black","products":["356","359","362","365","368"]},{"id":"56","label":"Orange","products":["357","360","363","366","369"]},{"id":"58","label":"Red","products":["358","361","364","367","370"]}],"position":"1"}},"template":"$<%- data.price %>","currencyFormat":"$%s","optionPrices":{"356":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"357":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"358":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"359":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"360":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"361":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"362":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"363":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"364":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"365":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"366":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"367":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"368":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"369":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]},"370":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66},"tierPrices":[]}},"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":1},"prices":{"oldPrice":{"amount":66},"basePrice":{"amount":66},"finalPrice":{"amount":66}},"productId":"371","chooseText":"Choose an Option...","images":[],"index":{"356":{"141":"167","93":"49"},"357":{"141":"167","93":"56"},"358":{"141":"167","93":"58"},"359":{"141":"168","93":"49"},"360":{"141":"168","93":"56"},"361":{"141":"168","93":"58"},"362":{"141":"169","93":"49"},"363":{"141":"169","93":"56"},"364":{"141":"169","93":"58"},"365":{"141":"170","93":"49"},"366":{"141":"170","93":"56"},"367":{"141":"170","93":"58"},"368":{"141":"171","93":"49"},"369":{"141":"171","93":"56"},"370":{"141":"171","93":"58"}}};
+
+        $('.swatch-opt-371').SwatchRenderer({
+            selectorProduct: '.product-item-details',
+            onlySwatches: true,
+            enableControlLabel: false,
+            numberToShow: 16,
+            jsonConfig: jsonConfig,
+            jsonSwatchConfig: {"141":{"167":{"type":"0","value":"XS","label":"XS"},"168":{"type":"0","value":"S","label":"S"},"169":{"type":"0","value":"M","label":"M"},"170":{"type":"0","value":"L","label":"L"},"171":{"type":"0","value":"XL","label":"XL"}},"93":{"49":{"type":"1","value":"#000000","label":"Black"},"56":{"type":"1","value":"#eb6703","label":"Orange"},"58":{"type":"1","value":"#ff0000","label":"Red"}}},
+            mediaCallback: 'http://127.0.0.1/swatches/ajax/media/'
+        });
+
+        var dataPriceBoxSelector = '[data-role=priceBox]',
+            dataProductIdSelector = '[data-product-id=371]',
+            priceBoxes = $(dataPriceBoxSelector + dataProductIdSelector);
+
+        priceBoxes.priceBox({
+            'priceConfig': {
+                priceFormat: jsonConfig.priceFormat,
+                prices: jsonConfig.prices
+            }
+        });
+    });
+</script>
