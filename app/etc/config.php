@@ -4,6 +4,7 @@ return array (
   array (
     'Magento_Store' => 1,
     'InteractOne_LimitStates' => 1,
+    'InteractOne_Test' => 1,
     'Magento_Directory' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
     'Magento_Config' => 1,
